@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SporTech</title>
+
+    <!--Import Icon-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Font awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="top-nav">
+      <nav class="nav transparent">
+        <div class="container">
+          <a href="./index.html" class="brand-logo"
+            ><img src="../images/logo.svg" alt="Logo"
+          /></a>
+          <ul class="right">
+            <li>
+              <a href="#" id="btnBack">
+                <i class="material-icons left">keyboard_arrow_left </i>Back
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div id="body-content">
+        <div class="container-fluid">
+          <div class="section main-body-page">
+            <div class="container">
+              <div class="row h-head">
+                <div class="col s12 m12">
+                  <h2 class="left">Detail Player</h2>
+                </div>
+              </div>
+              <div class="divider"></div>
+
+              <!-- Card player -->
+              <div class="card det-team">
+                <div class="card-stacked">
+                  <div class="card-content" id="playerDetails">
+                    <!-- Loader -->
+                    <div class="center-align" id="preloader">
+                      <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-blue">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="gap-patch">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+
+                        <div class="spinner-layer spinner-red">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="gap-patch">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+
+                        <div class="spinner-layer spinner-yellow">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="gap-patch">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+
+                        <div class="spinner-layer spinner-green">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="gap-patch">
+                            <div class="circle"></div>
+                          </div>
+                          <div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end Loader -->
+                    <!-- Table player -->
+                    <table class="striped">
+                      <tbody class="s-info">
+                        <tr>
+                          <th>Name</th>
+                          <td>:</td>
+                          <td id="name"></td>
+                        </tr>
+                        <tr>
+                          <th>Number</th>
+                          <td>:</td>
+                          <td id="shirtNumber"></td>
+                        </tr>
+                        <tr>
+                          <th>Nationality</th>
+                          <td>:</td>
+                          <td id="nationality"></td>
+                        </tr>
+                        <tr>
+                          <th>Country Of Birth</th>
+                          <td>:</td>
+                          <td id="countryOfBirth"></td>
+                        </tr>
+                        <tr>
+                          <th>Date Of Birth</th>
+                          <td>:</td>
+                          <td id="dateOfBirth"></td>
+                        </tr>
+                        <tr>
+                          <th>Position</th>
+                          <td>:</td>
+                          <th id="position"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- end of table -->
+                  </div>
+                </div>
+                <!-- Akhir -->
+              </div>
+              <div class="fixed-action-btn">
+                <a
+                  class="btn-floating btn-large tooltipped"
+                  id="save-player"
+                  data-position="left"
+                  data-tooltip="Add to favorite"
+                  ><i class="large material-icons" id="iconFav"
+                    >favorite_border</i
+                  ></a
+                >
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </body>
+</html>
